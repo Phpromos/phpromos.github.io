@@ -29,8 +29,19 @@ li:last-child{border-bottom:0}
 <li>⚡ Ofertas novas o dia todo</li>
 <li>🔕 Grupo só de avisos, sem conversa</li>
 </ul>
-<a class="btn" href="https://chat.whatsapp.com/G3rugEgnCJ2Iw5NeNuf3tQ">Entrar no grupo do WhatsApp</a>
+<a class="btn" id="entrar" href="https://chat.whatsapp.com/G3rugEgnCJ2Iw5NeNuf3tQ">Entrar no grupo do WhatsApp</a>
 <p class="nota">Grátis. Você pode sair do grupo quando quiser.</p>
 </div>
+<script>
+// Abre direto o app do WhatsApp (sem passar pela página do WhatsApp Web); se não abrir, usa o link normal
+document.getElementById('entrar').addEventListener('click',function(e){
+  var link=this.href, m=link.match(/chat\.whatsapp\.com\/([A-Za-z0-9]+)/);
+  if(!m) return;
+  e.preventDefault();
+  var t=setTimeout(function(){ location.href=link; },1500);
+  document.addEventListener('visibilitychange',function(){ if(document.hidden) clearTimeout(t); });
+  location.href='whatsapp://chat?code='+m[1];
+});
+</script>
 </body>
 </html>
