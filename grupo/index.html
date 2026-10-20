@@ -3,37 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PH Variedades - Grupo de Promoções</title>
-<meta name="description" content="Grupo gratuito no WhatsApp com promoções de tecnologia, games e PC do Mercado Livre, Shopee e AliExpress.">
+<title>PH Variedades - Grupo de Promoções Gamer</title>
+<meta name="description" content="Grupo gratuito no WhatsApp com promoções gamer: periféricos, consoles e peças de PC do Mercado Livre, Shopee e AliExpress.">
 <style>
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:#0b141a;color:#e9edef;font-family:Arial,Helvetica,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+body{margin:0;min-height:100vh;background:#0b141a;color:#e9edef;font-family:Arial,Helvetica,sans-serif;display:flex;justify-content:center;padding:20px 16px 28px}
 .card{max-width:420px;width:100%;text-align:center}
-h1{font-size:30px;margin:0 0 8px}
-.sub{color:#aebac1;font-size:17px;margin:0 0 24px;line-height:1.4}
-ul{list-style:none;padding:0;margin:0 0 28px;text-align:left;background:#111b21;border-radius:16px;padding:18px 20px}
-li{padding:8px 0;font-size:16px;border-bottom:1px solid #1f2c33}
-li:last-child{border-bottom:0}
-.btn{display:block;width:100%;padding:20px;background:#25d366;color:#0b141a;border-radius:40px;font-size:21px;font-weight:bold;text-decoration:none}
+h1{font-size:28px;margin:4px 0 6px}
+.sub{color:#aebac1;font-size:16px;margin:0 0 14px;line-height:1.4}
+.btn{display:block;width:100%;padding:19px;background:#25d366;color:#0b141a;border-radius:40px;font-size:20px;font-weight:bold;text-decoration:none;margin:6px 0 4px}
 .btn:active{transform:scale(.98)}
-.nota{color:#8696a0;font-size:13px;margin-top:16px}
+.mb{color:#25d366;font-size:14px;margin:8px 0 0;font-weight:bold}
+.lb{text-align:left;font-size:15px;font-weight:bold;margin:20px 0 8px}
+.ofs{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.of{display:flex;gap:10px;align-items:center;background:#111b21;border-radius:14px;padding:8px;text-align:left}
+.of img{width:64px;height:64px;object-fit:contain;background:#fff;border-radius:10px;flex:none}
+.tx{min-width:0}
+.t{font-size:14px;line-height:1.3;color:#e9edef}
+.p{font-size:15px;margin-top:4px}.p s{color:#8696a0;font-size:13px}.p b{color:#25d366}
+.d{background:#25d366;color:#0b141a;font-size:12px;font-weight:bold;border-radius:6px;padding:1px 6px}
+ul{list-style:none;padding:14px 18px;margin:0 0 18px;text-align:left;background:#111b21;border-radius:16px}
+li{padding:6px 0;font-size:15px}
+.nota{color:#8696a0;font-size:13px;margin-top:12px}
 </style>
 </head>
 <body>
 <div class="card">
-<h1>PH Variedades 🔥</h1>
-<p class="sub">Grupo gratuito no WhatsApp com promoções de tecnologia, games e PC.</p>
+<h1>PH Variedades 🎮🔥</h1>
+<p class="sub">Grupo grátis no WhatsApp com promoções gamer o dia todo.</p>
+<a class="btn" id="entrar" href="https://chat.whatsapp.com/G3rugEgnCJ2Iw5NeNuf3tQ">Entrar no grupo do WhatsApp</a>
+<p class="mb">👥 21 pessoas já estão no grupo</p>
+
 <ul>
 <li>🎮 Periféricos, consoles e peças de PC</li>
 <li>🛒 Mercado Livre, Shopee e AliExpress</li>
-<li>⚡ Ofertas novas o dia todo</li>
-<li>🔕 Grupo só de avisos, sem conversa</li>
+<li>🔕 Só eu posto: sem bagunça de mensagem</li>
 </ul>
-<a class="btn" id="entrar" href="https://chat.whatsapp.com/G3rugEgnCJ2Iw5NeNuf3tQ">Entrar no grupo do WhatsApp</a>
+<a class="btn" href="https://chat.whatsapp.com/G3rugEgnCJ2Iw5NeNuf3tQ" onclick="document.getElementById('entrar').click();return false;">Quero entrar no grupo</a>
 <p class="nota">Grátis. Você pode sair do grupo quando quiser.</p>
 </div>
 <script>
-// Abre direto o app do WhatsApp (sem passar pela página do WhatsApp Web); se não abrir, usa o link normal
 document.getElementById('entrar').addEventListener('click',function(e){
   var link=this.href, m=link.match(/chat\.whatsapp\.com\/([A-Za-z0-9]+)/);
   if(!m) return;
